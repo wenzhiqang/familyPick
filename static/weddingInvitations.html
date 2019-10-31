@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>温智强----随便写写h5</title>
+    <!--<embed src="./Music/马良_孙茜茹%20-%20往后余生.mp3" hidden="true" autostart="true" loop="true">-->
+    <script src="./css/css3-mediaqueries.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+    <style>
+        body,h1,h2,h3,p,ul,dl,dd{margin: 0;}
+        ul,td{padding: 0;}
+        body{
+            width: 100%;
+            height: 100%;
+            /*background-image: url("./imgs/Y68A3400.jpg");*/
+
+        }
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        .subject{
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            position: absolute;
+        }
+        .subject img{
+            width: 100%;
+            height: 100%;
+            transform:scale(1,1);
+            left: 0%;
+            top: 0%;
+            position: relative;
+            animation-name: myfirst;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-play-state: running;
+            /* Firefox: */
+            -moz-animation-name: myfirst;
+            -moz-animation-duration: 3s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-delay: 0s;
+            -moz-animation-iteration-count: 1;
+            -moz-animation-direction: normal;
+            -moz-animation-play-state: running;
+            /* Safari 和 Chrome: */
+            -webkit-animation-name: myfirst;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-direction: normal;
+            -webkit-animation-play-state: running;
+            /* Opera: */
+            -o-animation-name: myfirst;
+            -o-animation-duration: 3s;
+            -o-animation-timing-function: linear;
+            -o-animation-delay: 0s;
+            -o-animation-iteration-count: 1;
+            -o-animation-direction: normal;
+            -o-animation-play-state: running;
+        }
+        @keyframes myfirst
+        {
+            0%{
+                position: relative;
+                left: 0;
+                top: 0;
+                transform:scale(1,1);
+            }
+            25%{
+                position: relative;
+                left: -7%;
+                top:  -7%;
+                transform:scale(1.5,1.5);
+            }
+            40%{
+                position: relative;
+                left: -10%;
+                top: -10%;
+                transform:scale(2,2);
+            }
+            60%{
+                position: relative;
+                left: -10%;
+                top: -10%;
+                transform:scale(2,2);
+            }
+            70%{
+                position: relative;
+                left: -7%;
+                top:  -7%;
+                transform:scale(1.5,1.5);
+            }
+            100%{
+                position: relative;
+                left: 0;
+                top: 0;
+                transform:scale(1,1);
+            }
+        }
+        #audio{
+            position: relative;
+            z-index:-1;
+        }
+        .music{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius:50px;
+
+            background-size:contain;
+            top:3%;
+            left:0%;
+            background-image: url("./imgs/4156f2f5c4727fa.jpg");
+            background-color: red;
+            z-index:999;
+            /*-webkit-animation:rotateImg 5s linear infinite;*/
+            animation-name: rotateImg;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-play-state: running;
+            /* Firefox: */
+            -moz-animation-name: rotateImg;
+            -moz-animation-duration: 5s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-delay: 0s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-direction: normal;
+            -moz-animation-play-state: running;
+            /* Safari 和 Chrome: */
+            -webkit-animation-name: rotateImg;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: normal;
+            -webkit-animation-play-state: running;
+            /* Opera: */
+            -o-animation-name: rotateImg;
+            -o-animation-duration: 5s;
+            -o-animation-timing-function: linear;
+            -o-animation-delay: 0s;
+            -o-animation-iteration-count: infinite;
+            -o-animation-direction: normal;
+            -o-animation-play-state: running;
+        }
+        ::-webkit-scrollbar{width:0;height:1px}
+        ::-webkit-scrollbar-thumb{border-radius:5px;-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,.2);background:rgba(0,0,0,.2)}
+        @keyframes rotateImg
+        {
+            0%{-webkit-transform : rotate(0deg);}
+            100%{-webkit-transform : rotate(360deg);}
+        }
+
+        @-moz-keyframes rotateImg /* Firefox */
+        {
+            0%{-webkit-transform : rotate(0deg);}
+            100%{-webkit-transform : rotate(360deg);}
+        }
+
+        @-webkit-keyframes rotateImg /* Safari 和 Chrome */
+        {
+            0%{-webkit-transform : rotate(0deg);}
+            100%{-webkit-transform : rotate(360deg);}
+        }
+
+        @-o-keyframes rotateImg /* Opera */
+        {
+            0%{-webkit-transform : rotate(0deg);}
+            100%{-webkit-transform : rotate(360deg);}
+        }
+
+    </style>
+    <script type="text/javascript">
+        window.onload=function () {
+            init();
+        }
+        var audio=document.getElementById("audio");
+        function click_qiehuan() {
+            if($("div[name='music']").css("animation-play-state")=="running"){
+                pauseVid();
+                $("div[name='music']").css("animation-play-state","paused");
+                $("div[name='music']").css("-webkit-animation-play-state","paused");
+                $("div[name='music']").css("-moz-animation-play-state","paused");
+                $("div[name='music']").css(" -o-animation-play-state","paused");
+            }else {
+                playVid();
+                $("div[name='music']").css("animation-play-state","running");
+                $("div[name='music']").css("-webkit-animation-play-state","running");
+                $("div[name='music']").css("-moz-animation-play-state","running");
+                $("div[name='music']").css(" -o-animation-play-state","running ");
+                $("div[name='music']").css(" -o-animation-play-state","running ");
+            }
+        }
+        function init() {
+            //document.body.clientHeight
+            //if document.body.clientWidth
+            var music=document.getElementsByName("music")[0];
+            //alert(music)
+            //alert(document.body.clientWidth-music.offsetWidth-20);
+            music.style.left=document.body.clientWidth-music.offsetWidth-20+"px";
+        }
+        function playVid()
+        {
+            var myVideo=document.getElementById("audio");
+            myVideo.play();
+        }
+
+        function pauseVid()
+        {
+            var myVideo=document.getElementById("audio");
+            myVideo.pause();
+        }
+    </script>
+</head>
+<body onload="init()">
+<audio id='audio' src='./Music/马良_孙茜茹%20-%20往后余生.mp3' autoplay loop>
+</audio>
+<div name="music"  class="music" onclick="click_qiehuan()"></div>>
+<div class="subject">
+   <img src="./imgs/Y68A3536.jpg"/>
+</div>
+</body>
+</html>
