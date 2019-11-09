@@ -7,6 +7,9 @@
     <!--<embed src="./Music/马良_孙茜茹%20-%20往后余生.mp3" hidden="true" autostart="true" loop="true">-->
     <script src="./css/css3-mediaqueries.js"></script>
     <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/Nivo-Slider-jQuery-master/nivo-slider.css" />
+    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+    <script type="text/javascript" src="./js/Nivo-Slider-jQuery-master/jquery.nivo.slider.pack.js"></script>
     <style>
         body,h1,h2,h3,p,ul,dl,dd{margin: 0;}
         ul,td{padding: 0;}
@@ -183,6 +186,9 @@
 
     </style>
     <script type="text/javascript">
+        $(function() {
+            $('#slider').nivoSlider(effect='sliceDownRight','sliceDownLeft','sliceUpRight','sliceUpLeft', 'sliceUpDown','sliceUpDownLeft', 'fold','fade','slideInRight','slideInLeft');
+        });
         window.onload=function () {
             init();
         }
@@ -222,6 +228,7 @@
             var myVideo=document.getElementById("audio");
             myVideo.pause();
         }
+
     </script>
 </head>
 <body onload="init()">
@@ -229,7 +236,20 @@
 </audio>
 <div name="music"  class="music" onclick="click_qiehuan()"></div>>
 <div class="subject">
-   <img src="./imgs/Y68A3536.jpg"/>
+    <img src="./imgs/Y68A3400.jpg"/>
 </div>
+<!--<div id="slider" class="nivoSlider">
+    <img src="./imgs/Y68A3434.jpg"/>
+    <img src="./imgs/Y68A3437.jpg"/>
+    <img src="./imgs/Y68A3469.jpg"/>
+    <img src="./imgs/Y68A3486.jpg"/>
+    <img src="./imgs/Y68A3513.jpg"/>
+    <img src="./imgs/Y68A3521.jpg"/>
+    <img src="./imgs/Y68A3523.jpg"/>
+    <img src="./imgs/Y68A3523.jpg"/>
+</div>
+<!--<div id="htmlcaption" class="nivo-html-caption">
+    <strong>可爱的小妍妍</strong><!-- <a href="http://www.helloweba.net">helloweba.net</a>.
+</div>-->
 </body>
 </html>
